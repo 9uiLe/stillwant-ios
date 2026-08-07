@@ -1,0 +1,4 @@
+{
+  "argv": ["nix", "develop", "--command", "xcodebuild", "-version"]
+}
+

@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  nix-environment:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@v20
+      - name: Check flake outputs
+        run: nix flake check
+      - name: Verify development tools
+        run: |
+          nix develop --command actionlint
+          nix develop --command xcodegen --version
+          nix develop --command swiftformat --version
+          nix develop --command xcbeautify --version
