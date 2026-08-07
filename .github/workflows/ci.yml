@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   nix-environment:
-    runs-on: macos-15
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
       - uses: DeterminateSystems/nix-installer-action@v20
@@ -23,3 +23,9 @@ jobs:
           nix develop --command xcodegen --version
           nix develop --command swiftformat --version
           nix develop --command xcbeautify --version
+      - name: Check Swift formatting
+        run: nix develop --command swiftformat StillWant StillWantTests --lint
+      - name: Test
+        run: nix develop --command bash scripts/test.sh
+      - name: Archive without signing
+        run: nix develop --command bash scripts/archive.sh

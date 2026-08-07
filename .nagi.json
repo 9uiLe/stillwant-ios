@@ -1,4 +1,12 @@
 {
-  "argv": ["nix", "develop", "--command", "xcodebuild", "-version"]
+  "argv": [
+    "xcodebuild",
+    "-project",
+    "StillWant.xcodeproj",
+    "-scheme",
+    "StillWant",
+    "-destination",
+    "platform=iOS Simulator,name=iPhone 17 Pro,OS=latest",
+    "test"
+  ]
 }
-
