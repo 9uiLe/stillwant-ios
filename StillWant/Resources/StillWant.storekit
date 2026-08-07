@@ -1,0 +1,65 @@
+{
+  "identifier" : "5D89E086-5C7A-4A49-B87D-A47B24453403",
+  "nonRenewingSubscriptions" : [],
+  "products" : [],
+  "settings" : {
+    "_applicationInternalID" : "stillwant-local",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "stillwant-plus",
+      "localizations" : [
+        {
+          "description" : "Ongoing insights and export for your purchase decisions.",
+          "displayName" : "StillWant Plus",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "購入判断の継続的な分析と書き出し。",
+          "displayName" : "StillWant Plus",
+          "locale" : "ja_JP"
+        }
+      ],
+      "name" : "StillWant Plus",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "codeOffers" : [],
+          "displayPrice" : "2.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "F802954C-EBF5-4F1B-9041-B273199661FC",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlock ongoing insights and CSV export.",
+              "displayName" : "StillWant Plus Monthly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "継続的な分析とCSV書き出しを利用できます。",
+              "displayName" : "StillWant Plus 月額",
+              "locale" : "ja_JP"
+            }
+          ],
+          "productID" : "com.9uile.stillwant.plus.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "StillWant Plus Monthly",
+          "subscriptionGroupID" : "stillwant-plus",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
+
